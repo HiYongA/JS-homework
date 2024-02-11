@@ -1,0 +1,42 @@
+.list-group {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.black-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  padding: 30px;
+  visibility: hidden; /* 애니메이션 줄 때 display:none 대용 */
+  opacity: 0;
+  transition: all ls;
+}
+
+.white-bg {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+}
+
+.show-modal {
+  visibility: visible; /* display:block과 비슷 */
+  opacity: 1;
+}
+
+/* one-way UI 애니메이션 만드는 법 */
+/* 1. 시작스타일 */
+/* 2. 최종스타일 */
+/* 3. 원할 때 최종스타일로 변하라고 코드짬 */
+/* 4. transition 추가 */
+
+.main-bg {
+  padding: 100px 20px;
+  background: lightgray;
+}
